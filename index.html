@@ -96,6 +96,1491 @@
             margin-right: 5px;
         }
 
+        /* =========================================================
+   BHARTHANA BAJAR INFORMATION SECTIONS ONLY
+   Scoped CSS — existing website CSS ko affect nahi karega
+========================================================= */
+
+        .bb-info-section,
+        .bb-charges-section {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .bb-info-section *,
+        .bb-charges-section * {
+            box-sizing: border-box;
+        }
+
+        .bb-info-wrap,
+        .bb-charges-wrap {
+            width: 92%;
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+
+
+        /* =========================================================
+   SECTION 1 HEADING
+========================================================= */
+
+        .bb-top-heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 28px;
+        }
+
+        .bb-top-heading>div {
+            text-align: center;
+        }
+
+        .bb-top-heading small {
+            display: block;
+            color: #073b8f;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .bb-top-heading h2 {
+            margin: 4px 0 0;
+            font-family: "Baloo 2", sans-serif;
+            font-size: 34px;
+            line-height: 1.1;
+            color: #111;
+        }
+
+        .bb-top-heading h2 b {
+            color: #e51b23;
+        }
+
+        .bb-red-line {
+            width: 65px;
+            height: 3px;
+            border-radius: 20px;
+            background: #e51b23;
+        }
+
+
+        /* =========================================================
+   SECTION 1 MAIN LAYOUT
+========================================================= */
+
+        .bb-info-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 260px;
+            gap: 25px;
+            align-items: center;
+        }
+
+
+        /* =========================================================
+   INFORMATION RULES
+========================================================= */
+
+        .bb-rules {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .bb-rule {
+            display: grid;
+            grid-template-columns: 32px 48px minmax(0, 1fr);
+            align-items: center;
+            gap: 9px;
+
+            padding: 6px 8px;
+
+            border-radius: 12px;
+
+            background: #fff;
+
+            transition:
+                transform .3s ease,
+                box-shadow .3s ease,
+                background .3s ease;
+        }
+
+        .bb-rule:hover {
+            transform: translateX(7px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .13);
+            background: #fafcff;
+        }
+
+        .bb-number {
+            width: 28px;
+            height: 28px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 50%;
+
+            background: #073b8f;
+            color: #fff;
+
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .bb-rule-icon {
+            width: 43px;
+            height: 43px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 50%;
+
+            color: #fff;
+            font-size: 18px;
+
+            transition:
+                transform .35s ease,
+                box-shadow .35s ease;
+        }
+
+        .bb-rule:hover .bb-rule-icon {
+            transform: scale(1.12) rotate(-7deg);
+            box-shadow: 0 7px 16px rgba(0, 0, 0, .18);
+        }
+
+
+        /* COLORS */
+
+        .rule-red .bb-rule-icon {
+            background: #e51b23;
+        }
+
+        .rule-blue .bb-rule-icon {
+            background: #1d65b3;
+        }
+
+        .rule-green .bb-rule-icon {
+            background: #159447;
+        }
+
+        .rule-orange .bb-rule-icon {
+            background: #f28b16;
+        }
+
+        .rule-purple .bb-rule-icon {
+            background: #6a3ba8;
+        }
+
+        .rule-cyan .bb-rule-icon {
+            background: #11a4bb;
+        }
+
+        .rule-navy .bb-rule-icon {
+            background: #123e7b;
+        }
+
+        .rule-pink .bb-rule-icon {
+            background: #cf3c8f;
+        }
+
+        .rule-dark .bb-rule-icon {
+            background: #252a32;
+        }
+
+
+        /* =========================================================
+   RULE TEXT
+========================================================= */
+
+        .bb-rule-text {
+            min-width: 0;
+        }
+
+        .bb-rule-text h3 {
+            margin: 0 0 2px;
+
+            font-family: "Baloo 2", sans-serif;
+
+            font-size: 17px;
+            line-height: 1.1;
+
+            font-weight: 800;
+        }
+
+        .bb-rule-text p {
+            margin: 0;
+
+            color: #444;
+
+            font-size: 10px;
+            line-height: 1.45;
+        }
+
+
+        /* HEADING COLORS */
+
+        .rule-red .bb-rule-text h3 {
+            color: #e51b23;
+        }
+
+        .rule-blue .bb-rule-text h3 {
+            color: #1d65b3;
+        }
+
+        .rule-green .bb-rule-text h3 {
+            color: #159447;
+        }
+
+        .rule-orange .bb-rule-text h3 {
+            color: #ed7d12;
+        }
+
+        .rule-purple .bb-rule-text h3 {
+            color: #65389f;
+        }
+
+        .rule-cyan .bb-rule-text h3 {
+            color: #0797ae;
+        }
+
+        .rule-navy .bb-rule-text h3 {
+            color: #123e7b;
+        }
+
+        .rule-pink .bb-rule-text h3 {
+            color: #c63384;
+        }
+
+        .rule-dark .bb-rule-text h3 {
+            color: #242831;
+        }
+
+
+        /* =========================================================
+   RIGHT SIDE TRUST DESIGN
+========================================================= */
+
+        .bb-poster {
+            min-height: 390px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            position: relative;
+        }
+
+        .bb-poster-yellow {
+            width: 190px;
+
+            padding: 30px 18px;
+
+            text-align: center;
+
+            background: #ffe341;
+
+            clip-path: polygon(9% 14%,
+                    94% 0,
+                    88% 83%,
+                    0 100%);
+
+            transform: rotate(-4deg);
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .12);
+        }
+
+        .bb-poster-yellow span,
+        .bb-poster-yellow b {
+            display: block;
+
+            color: #073b8f;
+
+            font-size: 22px;
+        }
+
+        .bb-poster-yellow strong {
+            display: block;
+
+            color: #073b8f;
+
+            font-size: 27px;
+
+            line-height: 1;
+        }
+
+        .bb-poster-cart {
+            display: flex;
+            gap: 8px;
+
+            margin-top: 8px;
+
+            color: #0b4b94;
+
+            font-size: 62px;
+
+            transform: rotate(-5deg);
+        }
+
+        .bb-poster-family {
+            padding: 10px 22px;
+
+            color: #fff;
+
+            background: #073b8f;
+
+            border-radius: 12px;
+
+            text-align: center;
+
+            transform: rotate(-3deg);
+
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+        }
+
+        .bb-poster-family strong {
+            display: block;
+            font-size: 15px;
+        }
+
+        .bb-poster-family span {
+            display: block;
+            font-size: 13px;
+        }
+
+
+        /* =========================================================
+   CUSTOMER CONSENT
+========================================================= */
+
+        .bb-consent {
+            margin-top: 20px;
+
+            display: grid;
+            grid-template-columns: 1.5fr .55fr 1fr;
+
+            overflow: hidden;
+
+            border: 2px solid #e51b23;
+            border-radius: 11px;
+
+            background: #fff;
+        }
+
+        .bb-consent-left {
+            padding: 10px;
+        }
+
+        .bb-red-title {
+            display: inline-block;
+
+            padding: 3px 10px;
+
+            color: #fff;
+            background: #e51b23;
+
+            border-radius: 4px;
+
+            font-size: 11px;
+            font-weight: 800;
+        }
+
+        .bb-consent-left p {
+            margin-top: 6px;
+
+            font-size: 9px;
+            line-height: 1.4;
+        }
+
+        .bb-form-line {
+            display: flex;
+            align-items: flex-end;
+
+            gap: 6px;
+
+            margin-top: 7px;
+
+            font-size: 9px;
+        }
+
+        .bb-form-line i {
+            flex: 1;
+
+            height: 1px;
+
+            background: #333;
+        }
+
+        .bb-sign {
+            display: grid;
+            place-items: center;
+
+            border-left: 1px solid #e51b23;
+            border-right: 1px solid #e51b23;
+        }
+
+        .bb-sign-box {
+            width: 85%;
+            height: 60px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid #e51b23;
+            border-radius: 5px;
+
+            color: #444;
+        }
+
+        .bb-sign-box i {
+            font-size: 22px;
+        }
+
+        .bb-sign-box span {
+            font-size: 7px;
+        }
+
+        .bb-owner {
+            padding: 8px;
+
+            text-align: center;
+        }
+
+        .bb-owner-title {
+            display: inline-block;
+
+            padding: 2px 8px;
+
+            color: #fff;
+            background: #073b8f;
+
+            border-radius: 3px;
+
+            font-size: 9px;
+        }
+
+        .bb-owner h3 {
+            margin: 4px 0 0;
+
+            color: #e51b23;
+
+            font-size: 17px;
+        }
+
+        .bb-owner h3 span {
+            color: #073b8f;
+        }
+
+        .bb-owner p,
+        .bb-owner small {
+            display: block;
+
+            font-size: 8px;
+        }
+
+        .bb-signature {
+            margin-top: 4px;
+
+            color: #073b8f;
+
+            font-family: cursive;
+
+            font-size: 17px;
+        }
+
+        .bb-owner strong {
+            display: block;
+
+            font-size: 10px;
+        }
+
+
+        /* =========================================================
+   CONTACT STRIP
+========================================================= */
+
+        .bb-contact-strip {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 8px 12px;
+
+            color: #fff;
+            background: #073b8f;
+
+            font-size: 10px;
+        }
+
+        .bb-contact-strip i {
+            margin-right: 4px;
+            color: #ffd400;
+        }
+
+        .bb-red-footer {
+            padding: 5px;
+
+            color: #fff;
+            background: #e51b23;
+
+            text-align: center;
+
+            font-family: "Baloo 2", sans-serif;
+
+            font-size: 21px;
+            font-weight: 700;
+        }
+
+
+        /* =========================================================
+   SECTION 2
+========================================================= */
+
+        .bb-charges-section {
+            background: #f4f7fa;
+        }
+
+        .bb-charge-tables {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .bb-table-card {
+            overflow: hidden;
+
+            background: #fff;
+
+            border: 1px solid #ddd;
+            border-radius: 10px;
+
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+
+            transition:
+                transform .3s ease,
+                box-shadow .3s ease;
+        }
+
+        .bb-table-card:hover {
+            transform: translateY(-6px);
+
+            box-shadow:
+                0 16px 35px rgba(0, 0, 0, .15);
+        }
+
+
+        /* TABLE HEADER */
+
+        .bb-table-head {
+            display: flex;
+            align-items: center;
+
+            gap: 9px;
+
+            padding: 10px;
+
+            color: #fff;
+        }
+
+        .red-table .bb-table-head {
+            background: #e51b23;
+        }
+
+        .green-table .bb-table-head {
+            background: #178a47;
+        }
+
+        .bb-table-head>i {
+            font-size: 27px;
+        }
+
+        .bb-table-head strong {
+            display: block;
+
+            font-size: 15px;
+        }
+
+        .bb-table-head small {
+            display: block;
+
+            margin-top: 2px;
+
+            font-size: 9px;
+        }
+
+
+        /* TABLE */
+
+        .bb-table-card table {
+            width: 100%;
+
+            border-collapse: collapse;
+
+            font-size: 11px;
+        }
+
+        .bb-table-card th {
+            padding: 6px;
+
+            background: #f1f1f1;
+
+            border: 1px solid #ddd;
+
+            font-weight: 800;
+        }
+
+        .bb-table-card td {
+            padding: 6px;
+
+            border: 1px solid #ddd;
+
+            font-weight: 600;
+        }
+
+        .bb-table-card td:last-child {
+            text-align: center;
+
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .bb-table-card td b {
+            width: 21px;
+            height: 21px;
+
+            display: inline-grid;
+            place-items: center;
+
+            margin-right: 5px;
+
+            border-radius: 50%;
+
+            background: #159447;
+            color: #fff;
+
+            font-size: 10px;
+        }
+
+
+        /* NOTES */
+
+        .bb-note {
+            padding: 7px 9px;
+
+            color: #fff;
+
+            font-size: 9px;
+            font-weight: 700;
+        }
+
+        .red-note {
+            background: #e51b23;
+        }
+
+        .green-note {
+            background: #178a47;
+        }
+
+
+        /* =========================================================
+   PAYMENT HEADING
+========================================================= */
+
+        .bb-process-head {
+            display: flex;
+            align-items: center;
+
+            gap: 10px;
+
+            margin-top: 14px;
+
+            padding: 9px 14px;
+
+            color: #fff;
+
+            background: #073b8f;
+
+            border-radius: 10px 10px 0 0;
+        }
+
+        .bb-process-head i {
+            color: #ffd400;
+            font-size: 25px;
+        }
+
+        .bb-process-head h2 {
+            margin: 0;
+
+            font-family: "Baloo 2", sans-serif;
+
+            font-size: 24px;
+        }
+
+        .bb-process-head span {
+            margin-left: auto;
+
+            font-size: 10px;
+        }
+
+
+        /* =========================================================
+   PAYMENT CARDS
+========================================================= */
+
+        .bb-payment-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+
+            background: #fff;
+
+            border: 1px solid #ddd;
+        }
+
+        .bb-payment-grid article {
+            padding: 13px 8px;
+
+            text-align: center;
+
+            border-right: 1px solid #ddd;
+
+            transition:
+                transform .3s ease,
+                background .3s ease,
+                box-shadow .3s ease;
+        }
+
+        .bb-payment-grid article:last-child {
+            border-right: 0;
+        }
+
+        .bb-payment-grid article:hover {
+            background: #eef8ff;
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+        }
+
+        .bb-payment-grid article i {
+            margin-bottom: 6px;
+
+            color: #073b8f;
+
+            font-size: 30px;
+
+            transition: transform .3s ease;
+        }
+
+        .bb-payment-grid article:hover i {
+            transform: scale(1.15);
+        }
+
+        .bb-payment-grid h3 {
+            margin: 0;
+
+            color: #073b8f;
+
+            font-size: 12px;
+        }
+
+        .bb-payment-grid p {
+            margin-top: 4px;
+
+            color: #555;
+
+            font-size: 8px;
+            line-height: 1.45;
+        }
+
+
+        /* =========================================================
+   BOTTOM CARDS
+========================================================= */
+
+        .bb-bottom-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr .55fr;
+
+            gap: 11px;
+
+            margin-top: 11px;
+        }
+
+        .bb-check-card {
+            overflow: hidden;
+
+            background: #fff;
+
+            border: 1px solid #ddd;
+            border-radius: 8px;
+
+            transition:
+                transform .3s ease,
+                box-shadow .3s ease;
+        }
+
+        .bb-check-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow: 0 12px 25px rgba(0, 0, 0, .1);
+        }
+
+        .bb-check-card h3 {
+            padding: 6px 10px;
+
+            font-family: "Baloo 2", sans-serif;
+
+            font-size: 17px;
+        }
+
+        .delivery-rules h3 {
+            color: #159447;
+            background: #eaf8e9;
+        }
+
+        .features-card h3 {
+            color: #e51b23;
+            background: #fff4bc;
+        }
+
+        .bb-check-card ul {
+            margin: 0;
+            padding: 8px 12px;
+
+            list-style: none;
+        }
+
+        .bb-check-card li {
+            margin: 5px 0;
+
+            font-size: 9px;
+            line-height: 1.4;
+        }
+
+        .bb-check-card li::before {
+            content: "✓";
+
+            margin-right: 6px;
+
+            color: #159447;
+
+            font-weight: 900;
+        }
+
+        .features-card li::before {
+            color: #073b8f;
+        }
+
+
+        /* =========================================================
+   SLOGAN
+========================================================= */
+
+        .bb-slogan {
+            min-height: 145px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            padding: 12px;
+
+            color: #fff;
+
+            background: #e51b23;
+
+            border-radius: 9px;
+
+            text-align: center;
+
+            box-shadow: 0 8px 18px rgba(0, 0, 0, .15);
+
+            transform: rotate(-1deg);
+
+            transition: transform .3s ease;
+        }
+
+        .bb-slogan:hover {
+            transform: rotate(0) scale(1.03);
+        }
+
+        .bb-slogan strong {
+            font-size: 18px;
+        }
+
+        .bb-slogan span {
+            font-family: "Baloo 2", sans-serif;
+
+            font-size: 26px;
+            line-height: 1;
+        }
+
+        .bb-slogan b {
+            margin-top: 6px;
+
+            font-size: 12px;
+        }
+
+
+        /* =========================================================
+   BOTTOM CONTACT
+========================================================= */
+
+        .bb-bottom-contact {
+            display: grid;
+
+            grid-template-columns: 1.3fr 1.3fr .8fr;
+
+            margin-top: 10px;
+
+            overflow: hidden;
+
+            color: #fff;
+
+            background: #073b8f;
+
+            border-radius: 6px;
+        }
+
+        .bb-bottom-contact div {
+            display: grid;
+
+            grid-template-columns: 28px 1fr;
+            align-items: center;
+
+            padding: 8px;
+
+            border-right: 1px solid rgba(255, 255, 255, .2);
+        }
+
+        .bb-bottom-contact i {
+            grid-row: span 2;
+
+            color: #ffd400;
+
+            font-size: 20px;
+        }
+
+        .bb-bottom-contact strong {
+            font-size: 13px;
+        }
+
+        .bb-bottom-contact small {
+            font-size: 8px;
+        }
+
+        .bb-black-footer {
+            padding: 6px;
+
+            color: #ffd400;
+            background: #111;
+
+            text-align: center;
+
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+
+        /* =========================================================
+   MOBILE — 768px
+========================================================= */
+
+        @media (max-width: 768px) {
+
+            .bb-info-section,
+            .bb-charges-section {
+                padding: 30px 10px;
+            }
+
+            .bb-info-wrap,
+            .bb-charges-wrap {
+                width: 96%;
+            }
+
+            /* Heading */
+
+            .bb-top-heading {
+                gap: 8px;
+                margin-bottom: 20px;
+            }
+
+            .bb-red-line {
+                width: 28px;
+                height: 2px;
+            }
+
+            .bb-top-heading small {
+                font-size: 10px;
+            }
+
+            .bb-top-heading h2 {
+                font-size: 25px;
+            }
+
+
+            /* Information section */
+
+            .bb-info-layout {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .bb-poster {
+                min-height: 230px;
+
+                order: -1;
+
+                flex-direction: row;
+
+                gap: 8px;
+            }
+
+            .bb-poster-yellow {
+                width: 150px;
+
+                padding: 23px 12px;
+            }
+
+            .bb-poster-yellow span,
+            .bb-poster-yellow b {
+                font-size: 18px;
+            }
+
+            .bb-poster-yellow strong {
+                font-size: 21px;
+            }
+
+            .bb-poster-cart {
+                font-size: 43px;
+            }
+
+            .bb-poster-family {
+                padding: 8px 12px;
+            }
+
+
+            /* Rules */
+
+            .bb-rules {
+                gap: 5px;
+            }
+
+            .bb-rule {
+                grid-template-columns: 27px 41px minmax(0, 1fr);
+
+                gap: 6px;
+
+                padding: 6px;
+            }
+
+            .bb-rule:hover {
+                transform: translateY(-3px);
+            }
+
+            .bb-number {
+                width: 25px;
+                height: 25px;
+
+                font-size: 10px;
+            }
+
+            .bb-rule-icon {
+                width: 38px;
+                height: 38px;
+
+                font-size: 16px;
+            }
+
+            .bb-rule-text h3 {
+                font-size: 14px;
+            }
+
+            .bb-rule-text p {
+                font-size: 8.5px;
+                line-height: 1.4;
+            }
+
+
+            /* Consent */
+
+            .bb-consent {
+                grid-template-columns: 1fr;
+            }
+
+            .bb-sign {
+                min-height: 80px;
+
+                padding: 8px;
+
+                border-top: 1px solid #e51b23;
+                border-left: 0;
+                border-right: 0;
+            }
+
+            .bb-owner {
+                padding: 10px;
+
+                border-top: 1px solid #e51b23;
+            }
+
+            .bb-contact-strip {
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                gap: 5px;
+            }
+
+
+            /* Delivery tables */
+
+            .bb-charge-tables {
+                grid-template-columns: 1fr;
+
+                gap: 12px;
+            }
+
+
+            /* Payment */
+
+            .bb-process-head {
+                flex-wrap: wrap;
+
+                gap: 7px;
+            }
+
+            .bb-process-head h2 {
+                font-size: 21px;
+            }
+
+            .bb-process-head span {
+                width: 100%;
+
+                margin-left: 32px;
+            }
+
+            .bb-payment-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .bb-payment-grid article {
+                border-right: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .bb-payment-grid article:nth-child(2n) {
+                border-right: 0;
+            }
+
+            .bb-payment-grid article:nth-last-child(-n+2) {
+                border-bottom: 0;
+            }
+
+
+            /* Bottom */
+
+            .bb-bottom-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bb-slogan {
+                min-height: 130px;
+            }
+
+            .bb-bottom-contact {
+                grid-template-columns: 1fr;
+            }
+
+            .bb-bottom-contact div {
+                border-right: 0;
+
+                border-bottom: 1px solid rgba(255, 255, 255, .2);
+            }
+
+            .bb-bottom-contact div:last-child {
+                border-bottom: 0;
+            }
+        }
+
+
+        /* =========================================================
+   SMALL MOBILE — 480px
+========================================================= */
+
+        @media (max-width: 480px) {
+
+            .bb-info-section,
+            .bb-charges-section {
+                padding: 24px 7px;
+            }
+
+            .bb-info-wrap,
+            .bb-charges-wrap {
+                width: 98%;
+            }
+
+            .bb-top-heading {
+                gap: 5px;
+            }
+
+            .bb-top-heading small {
+                font-size: 8px;
+            }
+
+            .bb-top-heading h2 {
+                font-size: 21px;
+            }
+
+            .bb-red-line {
+                width: 20px;
+            }
+
+
+            /* Poster */
+
+            .bb-poster {
+                min-height: 200px;
+
+                transform: scale(.92);
+            }
+
+            .bb-poster-yellow {
+                width: 135px;
+
+                padding: 21px 8px;
+            }
+
+            .bb-poster-yellow span,
+            .bb-poster-yellow b {
+                font-size: 16px;
+            }
+
+            .bb-poster-yellow strong {
+                font-size: 19px;
+            }
+
+            .bb-poster-cart {
+                font-size: 37px;
+            }
+
+            .bb-poster-family {
+                padding: 7px 9px;
+            }
+
+            .bb-poster-family strong {
+                font-size: 12px;
+            }
+
+            .bb-poster-family span {
+                font-size: 10px;
+            }
+
+
+            /* Rules */
+
+            .bb-rule {
+                grid-template-columns: 24px 35px minmax(0, 1fr);
+
+                gap: 5px;
+
+                padding: 5px;
+            }
+
+            .bb-number {
+                width: 23px;
+                height: 23px;
+
+                font-size: 9px;
+            }
+
+            .bb-rule-icon {
+                width: 33px;
+                height: 33px;
+
+                font-size: 14px;
+            }
+
+            .bb-rule-text h3 {
+                font-size: 12px;
+            }
+
+            .bb-rule-text p {
+                font-size: 7.5px;
+
+                line-height: 1.35;
+            }
+
+
+            /* Consent */
+
+            .bb-consent-left {
+                padding: 8px;
+            }
+
+            .bb-consent-left p {
+                font-size: 8px;
+            }
+
+            .bb-form-line {
+                font-size: 8px;
+            }
+
+
+            /* Tables */
+
+            .bb-table-head strong {
+                font-size: 12px;
+            }
+
+            .bb-table-head small {
+                font-size: 8px;
+            }
+
+            .bb-table-card table {
+                font-size: 8.5px;
+            }
+
+            .bb-table-card th,
+            .bb-table-card td {
+                padding: 5px 3px;
+            }
+
+            .bb-table-card td:last-child {
+                font-size: 10px;
+            }
+
+
+            /* Payment */
+
+            .bb-payment-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .bb-payment-grid article {
+                padding: 10px 5px;
+            }
+
+            .bb-payment-grid article i {
+                font-size: 24px;
+            }
+
+            .bb-payment-grid h3 {
+                font-size: 10px;
+            }
+
+            .bb-payment-grid p {
+                font-size: 7px;
+            }
+
+
+            /* Bottom cards */
+
+            .bb-check-card h3 {
+                font-size: 14px;
+            }
+
+            .bb-check-card li {
+                font-size: 8px;
+            }
+
+            .bb-slogan span {
+                font-size: 22px;
+            }
+        }
+
+
+        /* =========================================================
+   EXTRA SMALL — 360px
+========================================================= */
+
+        @media (max-width: 360px) {
+
+            .bb-top-heading h2 {
+                font-size: 18px;
+            }
+
+            .bb-rule {
+                grid-template-columns: 22px 31px minmax(0, 1fr);
+            }
+
+            .bb-rule-icon {
+                width: 30px;
+                height: 30px;
+
+                font-size: 12px;
+            }
+
+            .bb-number {
+                width: 21px;
+                height: 21px;
+            }
+
+            .bb-rule-text h3 {
+                font-size: 11px;
+            }
+
+            .bb-rule-text p {
+                font-size: 7px;
+            }
+
+            .bb-poster {
+                transform: scale(.84);
+            }
+
+            .bb-payment-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bb-payment-grid article {
+                border-right: 0;
+                border-bottom: 1px solid #ddd !important;
+            }
+
+            .bb-payment-grid article:last-child {
+                border-bottom: 0 !important;
+            }
+        }
+
+
+        /* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+        @media (hover: none) {
+
+            .bb-rule:hover,
+            .bb-table-card:hover,
+            .bb-check-card:hover,
+            .bb-slogan:hover,
+            .bb-payment-grid article:hover {
+                transform: none;
+                box-shadow: none;
+            }
+
+        }
+
+
+        /* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .bb-info-section *,
+            .bb-charges-section * {
+                animation: none !important;
+                transition: none !important;
+                scroll-behavior: auto !important;
+            }
+
+        }
 
         /* =========================================================
    HEADER
@@ -1011,6 +2496,394 @@
         }
 
 
+
+        /* =========================================================
+           EXTRA SERVICE DIRECTORY SECTIONS + SITE ANIMATIONS
+        ========================================================= */
+
+        .directory-section {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+        }
+
+        .directory-section.alt {
+            background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+        }
+
+        .directory-section.green-tint {
+            background: linear-gradient(180deg, #f7fff9 0%, #ffffff 100%);
+        }
+
+        .directory-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .directory-card {
+            position: relative;
+            background: #fff;
+            border: 1px solid #e5e9ef;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 7px 22px rgba(0, 0, 0, .07);
+            transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+            isolation: isolate;
+        }
+
+        .directory-card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            pointer-events: none;
+            background: linear-gradient(135deg, rgba(229, 27, 35, .07), rgba(21, 148, 71, .08));
+            opacity: 0;
+            transition: opacity .35s ease;
+            z-index: -1;
+        }
+
+        .directory-card:hover {
+            transform: translateY(-9px) scale(1.01);
+            border-color: #159447;
+            box-shadow: 0 18px 38px rgba(0, 0, 0, .14);
+        }
+
+        .directory-card:hover::after {
+            opacity: 1;
+        }
+
+        .directory-image {
+            height: 170px;
+            overflow: hidden;
+            background: #eef3f8;
+            position: relative;
+        }
+
+        .directory-image::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 45%, rgba(0, 0, 0, .28));
+            pointer-events: none;
+        }
+
+        .directory-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .55s ease, filter .35s ease;
+        }
+
+        .directory-card:hover .directory-image img {
+            transform: scale(1.1);
+            filter: saturate(1.08);
+        }
+
+        .directory-icon {
+            position: absolute;
+            left: 15px;
+            bottom: 12px;
+            width: 43px;
+            height: 43px;
+            border-radius: 50%;
+            background: #fff;
+            color: #e51b23;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, .18);
+            transition: transform .35s ease, background .35s ease, color .35s ease;
+        }
+
+        .directory-card:hover .directory-icon {
+            transform: rotate(-8deg) scale(1.12);
+            background: #159447;
+            color: #fff;
+        }
+
+        .directory-body {
+            padding: 17px 16px 18px;
+        }
+
+        .directory-body h3 {
+            font-family: "Baloo 2", sans-serif;
+            font-size: 20px;
+            line-height: 1.1;
+            margin-bottom: 7px;
+        }
+
+        .directory-body p {
+            color: #707070;
+            font-size: 12px;
+            line-height: 1.65;
+            min-height: 39px;
+            margin-bottom: 12px;
+        }
+
+        .directory-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #e51b23;
+            font-size: 12px;
+            font-weight: 800;
+            transition: gap .3s ease, color .3s ease;
+        }
+
+        .directory-card:hover .directory-link {
+            gap: 10px;
+            color: #159447;
+        }
+
+        .directory-number {
+            position: absolute;
+            right: 13px;
+            top: 13px;
+            min-width: 29px;
+            height: 29px;
+            padding: 0 7px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, .92);
+            color: #073b8f;
+            font-size: 11px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+            z-index: 3;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .2, 1);
+        }
+
+        .reveal.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal.delay-1 {
+            transition-delay: .08s;
+        }
+
+        .reveal.delay-2 {
+            transition-delay: .16s;
+        }
+
+        .reveal.delay-3 {
+            transition-delay: .24s;
+        }
+
+        .reveal.delay-4 {
+            transition-delay: .32s;
+        }
+
+        .hero-content {
+            animation: heroIn .9s cubic-bezier(.2, .7, .2, 1) both;
+        }
+
+        @keyframes heroIn {
+            from {
+                opacity: 0;
+                transform: translateX(-55px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .quick-item,
+        .category-card,
+        .service-card,
+        .shop-card,
+        .stat,
+        .btn,
+        .hero-btn,
+        .delivery-button,
+        .shop-buttons a,
+        .social a,
+        .float {
+            transition: transform .3s ease, box-shadow .3s ease, background .3s ease,
+                color .3s ease, border-color .3s ease;
+        }
+
+        .quick-item:hover {
+            background: #f9fffb;
+            transform: translateY(-5px);
+        }
+
+        .quick-item:hover .quick-icon {
+            transform: rotate(8deg) scale(1.08);
+        }
+
+        .quick-icon {
+            transition: transform .3s ease, background .3s ease, color .3s ease;
+        }
+
+        .btn:hover,
+        .hero-btn:hover,
+        .delivery-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 9px 22px rgba(0, 0, 0, .16);
+        }
+
+        .shop-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 32px rgba(0, 0, 0, .13);
+        }
+
+        .shop-card .shop-image {
+            overflow: hidden;
+        }
+
+        .shop-card .shop-image img {
+            transition: transform .45s ease;
+        }
+
+        .shop-card:hover .shop-image img {
+            transform: scale(1.07);
+        }
+
+        .stat:hover {
+            transform: translateY(-4px);
+        }
+
+        .social a:hover,
+        .float:hover {
+            transform: translateY(-4px) scale(1.06);
+        }
+
+        /* Mobile navigation */
+        @media(max-width:1050px) {
+            .header {
+                position: sticky;
+            }
+
+            .nav.mobile-open {
+                display: flex;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                width: 100%;
+                background: #fff;
+                padding: 16px 4%;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                box-shadow: 0 12px 25px rgba(0, 0, 0, .12);
+                border-top: 1px solid #eee;
+                animation: navDrop .25s ease both;
+            }
+
+            .nav.mobile-open a {
+                padding: 13px 4px;
+                border-bottom: 1px solid #f0f0f0;
+            }
+
+            .nav.mobile-open a:last-child {
+                border-bottom: 0;
+            }
+
+            @keyframes navDrop {
+                from {
+                    opacity: 0;
+                    transform: translateY(-8px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .directory-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media(max-width:650px) {
+            .directory-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 11px;
+            }
+
+            .directory-image {
+                height: 125px;
+            }
+
+            .directory-body {
+                padding: 12px;
+            }
+
+            .directory-body h3 {
+                font-size: 16px;
+            }
+
+            .directory-body p {
+                font-size: 10.5px;
+                min-height: 34px;
+            }
+
+            .directory-icon {
+                width: 36px;
+                height: 36px;
+                left: 10px;
+                bottom: 9px;
+                font-size: 13px;
+            }
+
+            .directory-number {
+                top: 9px;
+                right: 9px;
+                min-width: 25px;
+                height: 25px;
+                font-size: 9px;
+            }
+
+            .directory-link {
+                font-size: 10.5px;
+            }
+        }
+
+        @media(max-width:390px) {
+            .directory-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .directory-image {
+                height: 170px;
+            }
+        }
+
+        @media(prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important;
+            }
+
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+
+
         /* =========================================================
    RESPONSIVE
 ========================================================= */
@@ -1219,6 +3092,243 @@
             }
 
         }
+
+        a.pressed,
+        button.pressed {
+            transform: scale(.97);
+        }
+
+
+        /* =========================================================
+   FINAL UPDATE — INFO POSTERS + GLOBAL ANIMATIONS
+========================================================= */
+        .poster-section {
+            background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+            padding: 70px 0;
+        }
+
+        .poster-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+            align-items: start;
+        }
+
+        .poster-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 10px;
+            border: 1px solid #e5eaf2;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, .10);
+            overflow: hidden;
+            transition: transform .45s ease, box-shadow .45s ease, border-color .45s ease;
+        }
+
+        .poster-card:hover {
+            transform: translateY(-9px);
+            box-shadow: 0 22px 50px rgba(7, 59, 143, .18);
+            border-color: #159447;
+        }
+
+        .poster-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 12px;
+            transition: transform .6s cubic-bezier(.2, .7, .2, 1), filter .45s ease;
+        }
+
+        .poster-card:hover img {
+            transform: scale(1.025);
+            filter: saturate(1.06);
+        }
+
+        .poster-caption {
+            padding: 12px 8px 5px;
+            text-align: center;
+            font-weight: 800;
+            color: #073b8f;
+            font-size: 14px;
+        }
+
+        /* stronger hover/press motion throughout the website */
+        .category-card,
+        .service-card,
+        .shop-card,
+        .directory-card,
+        .quick-item,
+        .contact-info,
+        .map,
+        .delivery-box,
+        .stat,
+        .footer-col {
+            will-change: transform;
+        }
+
+        .category-card,
+        .service-card,
+        .shop-card,
+        .directory-card {
+            transform-origin: center bottom;
+        }
+
+        .category-card:active,
+        .service-card:active,
+        .shop-card:active,
+        .directory-card:active,
+        .btn:active,
+        .hero-btn:active,
+        .delivery-button:active,
+        .shop-buttons a:active {
+            transform: scale(.97);
+        }
+
+        .directory-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .directory-section::before {
+            content: "";
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            background: rgba(21, 148, 71, .055);
+            right: -100px;
+            top: -100px;
+            pointer-events: none;
+        }
+
+        .directory-section.alt::before {
+            background: rgba(229, 27, 35, .045);
+            left: -100px;
+            right: auto;
+        }
+
+        .directory-section.green-tint::before {
+            background: rgba(7, 59, 143, .05);
+        }
+
+        /* mobile menu: fully functional and easy to see */
+        @media(max-width:1050px) {
+            .header-inner {
+                position: relative;
+            }
+
+            .mobile-menu-btn {
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                width: 46px;
+                height: 46px;
+                border: 0;
+                border-radius: 10px;
+                background: #073b8f;
+                color: #fff;
+                box-shadow: 0 8px 20px rgba(7, 59, 143, .20);
+                transition: transform .25s ease, background .25s ease, box-shadow .25s ease;
+                z-index: 10002;
+            }
+
+            .mobile-menu-btn:hover {
+                transform: translateY(-2px);
+                background: #159447;
+                box-shadow: 0 12px 25px rgba(21, 148, 71, .22);
+            }
+
+            .mobile-menu-btn:active {
+                transform: scale(.94);
+            }
+
+            .nav.mobile-open {
+                display: flex !important;
+                position: absolute;
+                top: calc(100% + 8px);
+                left: 0;
+                right: 0;
+                width: 100%;
+                max-height: calc(100vh - 85px);
+                overflow-y: auto;
+                background: #fff;
+                padding: 10px 18px 16px;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                border-radius: 0 0 16px 16px;
+                box-shadow: 0 18px 45px rgba(0, 0, 0, .18);
+                border: 1px solid #e8edf4;
+                animation: navDropFinal .28s ease both;
+                z-index: 10001;
+            }
+
+            .nav.mobile-open a {
+                padding: 14px 7px;
+                border-bottom: 1px solid #eef1f5;
+                font-size: 14px;
+            }
+
+            .nav.mobile-open a:last-child {
+                border-bottom: 0;
+            }
+
+            body.menu-open {
+                overflow: hidden;
+            }
+
+            @keyframes navDropFinal {
+                from {
+                    opacity: 0;
+                    transform: translateY(-12px) scale(.99)
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateY(0) scale(1)
+                }
+            }
+
+            .poster-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+        }
+
+        @media(max-width:650px) {
+            .poster-section {
+                padding: 52px 0;
+            }
+
+            .poster-card {
+                padding: 7px;
+                border-radius: 14px;
+            }
+
+            .poster-caption {
+                font-size: 12px;
+                padding: 9px 4px 3px;
+            }
+
+            .mobile-menu-btn {
+                width: 43px;
+                height: 43px;
+                font-size: 19px;
+            }
+        }
+
+        /* Respect reduced-motion while keeping the page usable. */
+        @media(prefers-reduced-motion:reduce) {
+
+            .poster-card,
+            .poster-card img,
+            .category-card,
+            .service-card,
+            .shop-card,
+            .directory-card,
+            .mobile-menu-btn {
+                transition: none !important;
+            }
+        }
     </style>
 
 </head>
@@ -1274,8 +3384,7 @@
 
             <a href="#home" class="logo">
 
-                <img src="https://dummyimage.com/600x180/ffffff/073b8f.png&text=Bharthana+Bajar"
-                    alt="Bharthana Bajar Logo">
+                <img src="logoimg.png" alt="Bharthana Bajar Logo">
 
             </a>
 
@@ -1287,6 +3396,8 @@
                 <a href="#categories">Categories</a>
 
                 <a href="#services">Services</a>
+
+                <a href="#service-group-1">More Services</a>
 
                 <a href="#shops">Local Shops</a>
 
@@ -1318,11 +3429,11 @@
             </div>
 
 
-            <div class="mobile-menu-btn">
+            <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
 
                 <i class="fa-solid fa-bars"></i>
 
-            </div>
+            </button>
 
         </div>
 
@@ -1507,6 +3618,365 @@
         </div>
 
     </section>
+
+
+
+    <!-- =========================================================
+         CUSTOMER INFORMATION / DELIVERY POSTERS
+         Exact user-provided images — embedded so they cannot be missing.
+    ========================================================= -->
+    <!-- =========================================================
+     SECTION 1 — BHARTHANA BAJAR INFORMATION
+========================================================= -->
+    <section class="bb-info-section" id="bb-information">
+        <div class="bb-info-wrap">
+
+            <div class="bb-top-heading">
+                <span class="bb-red-line"></span>
+                <div>
+                    <small>BHARTHANA BAJAR INFORMATION</small>
+                    <h2>जरूरी जानकारी <b>एक ही जगह</b></h2>
+                </div>
+                <span class="bb-red-line"></span>
+            </div>
+
+            <div class="bb-info-layout">
+
+                <div class="bb-rules">
+
+                    <article class="bb-rule rule-red">
+                        <div class="bb-number">1</div>
+                        <div class="bb-rule-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="bb-rule-text">
+                            <h3>ऑर्डर और भुगतान</h3>
+                            <p>ऑनलाइन ऑर्डर के लिए जानकारी सही और पूरी देनी होगी। ऑर्डर के पुष्टि के बाद भुगतान स्वीकार
+                                किया जाएगा और ऑर्डर की प्रक्रिया शुरू होगी।</p>
+                        </div>
+                    </article>
+
+                    <article class="bb-rule rule-blue">
+                        <div class="bb-number">2</div>
+                        <div class="bb-rule-icon"><i class="fa-solid fa-box-open"></i></div>
+                        <div class="bb-rule-text">
+                            <h3>उत्पाद की गुणवत्ता</h3>
+                            <p>हम केवल उपलब्ध और भरोसेमंद उत्पाद/सेवा की जानकारी देने का प्रयास करते हैं। किसी भी प्रकार
+                                की कमी या समस्या के लिए संबंधित विक्रेता से संपर्क किया जा सकता है।</p>
+                        </div>
+                    </article>
+
+                    <article class="bb-rule rule-green">
+                        <div class="bb-number">3</div>
+                        <div class="bb-rule-icon"><i class="fa-solid fa-truck"></i></div>
+                        <div class="bb-rule-text">
+                            <h3>डिलीवरी समय</h3>
+                            <p>डिलीवरी सामान्यतः 3 से 7 कार्यदिवस के अंदर की जाती है। दूरी और उपलब्धता के अनुसार समय
+                                अधिक या कम हो सकता है।</p>
+                        </div>
+                    </article>
+
+                    <article class="bb-rule rule-orange">
+                        <div class="bb-number">4</div>
+                        <div class="bb-rule-icon"><i class="fa-solid fa-box"></i></div>
+                        <div class="bb-rule-text">
+                            <h3>रिटर्न और रिफंड</h3>
+                            <p>उत्पाद में समस्या होने पर निर्धारित समय के अंदर रिटर्न/रिफंड के लिए अनुरोध किया जा सकता
+                                है। रिटर्न की स्थिति में आवश्यक फोटो/वीडियो उपलब्ध कराना जरूरी हो सकता है।</p>
+                        </div>
+                    </article>
+
+                    <article class="bb-rule rule-purple">
+                        <div class="bb-number">5</div>
+                        <div class="bb-rule-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="bb-rule-text">
+                            <h3>सुरक्षित खरीदारी</h3>
+                            <p>ग्राहक से जुड़ी जानकारी सुरक्षित रखने का प्रयास किया जाता है। भुगतान केवल भरोसेमंद माध्यम
+                                से करें और अपनी निजी जानकारी अनजान व्यक्ति से साझा न करें।</p>
+                        </div>
+                    </article>
+
+                    <article class="bb-rule rule-cyan">
+                        <div class="bb-number">6</div>
+                        <div class="bb-rule-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                        <div class="bb-rule-text">
+                            <h3>भुगतान और कैश</h3>
+                            <p>ऑनलाइन तथा कैश भुगतान की सुविधा उपलब्ध हो सकती है। डिलीवरी, दूरी और सेवा के अनुसार भुगतान
+                                का तरीका अलग हो सकता है।</p>
+                        </div>
+                    </article>
+
+                    <article class="bb-rule rule-red">
+                        <div class="bb-number">7</div>
+                        <div class="bb-rule-icon"><i class="fa-solid fa-circle-xmark"></i></div>
+                        <div class="bb-rule-text">
+                            <h3>कैंसिलेशन</h3>
+                            <p>ऑर्डर कैंसिल करने की स्थिति में लागू नियमों के अनुसार शुल्क या भुगतान की वापसी हो सकती
+                                है। ऑर्डर तैयार होने के बाद कैंसिलेशन संभव न भी हो सकता है।</p>
+                        </div>
+                    </article>
+
+                    <article class="bb-rule rule-navy">
+                        <div class="bb-number">8</div>
+                        <div class="bb-rule-icon"><i class="fa-solid fa-lock"></i></div>
+                        <div class="bb-rule-text">
+                            <h3>सुरक्षा और गोपनीयता</h3>
+                            <p>आपकी निजी जानकारी जैसे नाम, पता, मोबाइल आदि का उपयोग सेवा उपलब्ध कराने के लिए किया जाएगा।
+                                इसे अनावश्यक रूप से साझा नहीं किया जाएगा।</p>
+                        </div>
+                    </article>
+
+                    <article class="bb-rule rule-pink">
+                        <div class="bb-number">9</div>
+                        <div class="bb-rule-icon"><i class="fa-solid fa-headset"></i></div>
+                        <div class="bb-rule-text">
+                            <h3>ग्राहक सेवा</h3>
+                            <p>किसी भी समस्या या मदद के लिए ग्राहक सेवा से संपर्क कर सकते हैं। शिकायत का समाधान उपलब्ध
+                                जानकारी और संबंधित सेवा के आधार पर किया जाएगा।</p>
+                        </div>
+                    </article>
+
+                    <article class="bb-rule rule-dark">
+                        <div class="bb-number">10</div>
+                        <div class="bb-rule-icon"><i class="fa-solid fa-gavel"></i></div>
+                        <div class="bb-rule-text">
+                            <h3>कानूनी अधिकार</h3>
+                            <p>सभी नियम लागू कानूनों और सेवा की शर्तों के अनुसार होंगे। विवाद होने पर संबंधित नियमों के
+                                अनुसार कार्रवाई का अधिकार सुरक्षित रहेगा।</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <aside class="bb-poster">
+                    <div class="bb-poster-yellow">
+                        <span>आओ</span>
+                        <strong>विश्वास से ही</strong>
+                        <b>हमारी</b>
+                        <strong>ताकत है</strong>
+                    </div>
+                    <div class="bb-poster-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="bb-poster-family">
+                        <strong>सुरक्षित खरीदारी</strong>
+                        <span>सुखहाल परिवार</span>
+                    </div>
+                </aside>
+
+            </div>
+
+            <div class="bb-consent">
+                <div class="bb-consent-left">
+                    <div class="bb-red-title">ग्राहक की सहमति</div>
+                    <p>मैं उपरोक्त सभी नियम एवं शर्तों को ध्यानपूर्वक पढ़/समझ कर अपनी सहमति देता/देती हूँ।</p>
+                    <div class="bb-form-line"><span>और मेरा नाम:</span><i></i></div>
+                    <div class="bb-form-line"><span>मोबाइल:</span><i></i></div>
+                    <div class="bb-form-line"><span>दिनांक:</span><i></i></div>
+                </div>
+                <div class="bb-sign">
+                    <div class="bb-sign-box">
+                        <i class="fa-solid fa-signature"></i>
+                        <span>ग्राहक के हस्ताक्षर</span>
+                    </div>
+                </div>
+                <div class="bb-owner">
+                    <div class="bb-owner-title">कम्पनी की ओर से</div>
+                    <h3>BharthanaBazar<span>.com</span></h3>
+                    <p>आपका अपना स्थानीय बाजार</p>
+                    <div class="bb-signature">Shiksha Yadav</div>
+                    <strong>शिक्षा यादव</strong>
+                    <small>(Owner)</small>
+                </div>
+            </div>
+
+            <div class="bb-contact-strip">
+                <span><i class="fa-brands fa-whatsapp"></i> संपर्क करें : <b>7830726630</b></span>
+                <span><i class="fa-solid fa-globe"></i> www.BharthanaBazar.com</span>
+                <span><i class="fa-solid fa-location-dot"></i> Bharthana, Etawah (U.P.)</span>
+            </div>
+            <div class="bb-red-footer">ऑनलाइन खरीदारी, अब और भी आसान</div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+     SECTION 2 — DELIVERY / PAYMENT / RULES / FEATURES
+========================================================= -->
+    <section class="bb-charges-section" id="bb-charges">
+        <div class="bb-charges-wrap">
+
+            <div class="bb-charge-tables">
+
+                <div class="bb-table-card red-table">
+                    <div class="bb-table-head">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <strong>दूरी के अनुसार डिलीवरी चार्ज</strong>
+                            <small>(मुख्य क्षेत्र — भर्थना बाजार से आसपास)</small>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>दूरी</th>
+                                <th>डिलीवरी चार्ज</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>1</b> 1 किलोमीटर तक</td>
+                                <td>₹ 30</td>
+                            </tr>
+                            <tr>
+                                <td><b>2</b> 2 किलोमीटर तक</td>
+                                <td>₹ 50</td>
+                            </tr>
+                            <tr>
+                                <td><b>3</b> 5 किलोमीटर तक</td>
+                                <td>₹ 80</td>
+                            </tr>
+                            <tr>
+                                <td><b>4</b> 10 किलोमीटर तक</td>
+                                <td>₹ 120</td>
+                            </tr>
+                            <tr>
+                                <td><b>5</b> 10 किलोमीटर से अधिक<br><small>(प्रति अतिरिक्त 5 कि.मी.)</small></td>
+                                <td>₹ 150<br><small>(प्रति 5 कि.मी.)</small></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="bb-note red-note"><i class="fa-solid fa-bullhorn"></i> नोट: 10 किलोमीटर से अधिक दूरी पर
+                        हर 5 किलोमीटर के लिए ₹15 अतिरिक्त शुल्क लगेगा।</div>
+                </div>
+
+                <div class="bb-table-card green-table">
+                    <div class="bb-table-head">
+                        <i class="fa-solid fa-box"></i>
+                        <div>
+                            <strong>वजन के अनुसार डिलीवरी चार्ज</strong>
+                            <small>(सामान्यतः बड़े वजन — प्रति किलो)</small>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>क्रमांक</th>
+                                <th>वजन (किलोग्राम)</th>
+                                <th>डिलीवरी चार्ज</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>1</b></td>
+                                <td>0 - 1 किलो</td>
+                                <td>₹ 30</td>
+                            </tr>
+                            <tr>
+                                <td><b>2</b></td>
+                                <td>1 - 3 किलो</td>
+                                <td>₹ 50</td>
+                            </tr>
+                            <tr>
+                                <td><b>3</b></td>
+                                <td>3 - 5 किलो</td>
+                                <td>₹ 75</td>
+                            </tr>
+                            <tr>
+                                <td><b>4</b></td>
+                                <td>5 - 10 किलो</td>
+                                <td>₹ 120</td>
+                            </tr>
+                            <tr>
+                                <td><b>5</b></td>
+                                <td>10 - 20 किलो</td>
+                                <td>₹ 180</td>
+                            </tr>
+                            <tr>
+                                <td><b>6</b></td>
+                                <td>20 किलो से अधिक<br><small>(प्रति अतिरिक्त किलो)</small></td>
+                                <td>₹ 50<br><small>(प्रति किलो)</small></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="bb-note green-note"><i class="fa-solid fa-lock"></i> नोट: 20 किलो से अधिक वजन पर
+                        अतिरिक्त शुल्क लागू होगा।</div>
+                </div>
+
+            </div>
+
+            <div class="bb-process-head">
+                <i class="fa-solid fa-wallet"></i>
+                <h2>भुगतान की प्रक्रिया</h2>
+                <span>आप अपनी सुविधा अनुसार भुगतान कर सकते हैं</span>
+            </div>
+
+            <div class="bb-payment-grid">
+                <article><i class="fa-solid fa-money-bill-wave"></i>
+                    <h3>नकद (Cash)</h3>
+                    <p>डिलीवरी के समय कैश द्वारा भुगतान की सुविधा।</p>
+                </article>
+                <article><i class="fa-solid fa-qrcode"></i>
+                    <h3>UPI / QR Code</h3>
+                    <p>PhonePe, Google Pay, Paytm या किसी भी UPI ऐप से भुगतान।</p>
+                </article>
+                <article><i class="fa-solid fa-credit-card"></i>
+                    <h3>कार्ड पेमेंट</h3>
+                    <p>डेबिट / क्रेडिट कार्ड से भुगतान करें।</p>
+                </article>
+                <article><i class="fa-brands fa-google-pay"></i>
+                    <h3>वॉलेट</h3>
+                    <p>Paytm / PhonePe वॉलेट से भुगतान कर सकते हैं।</p>
+                </article>
+                <article><i class="fa-solid fa-building-columns"></i>
+                    <h3>ऑनलाइन ट्रांसफर</h3>
+                    <p>बैंक / UPI से सीधे भुगतान कर सकते हैं।</p>
+                </article>
+            </div>
+
+            <div class="bb-bottom-grid">
+
+                <div class="bb-check-card delivery-rules">
+                    <h3><i class="fa-solid fa-circle-check"></i> डिलीवरी के लिए जरूरी नियम</h3>
+                    <ul>
+                        <li>सही पता, सही मोबाइल नंबर और नाम उपलब्ध कराएं।</li>
+                        <li>सामान की पैकिंग सही तरह से करें।</li>
+                        <li>डिलीवरी बॉय से सामान लेते समय जांच करें।</li>
+                        <li>क्षतिग्रस्त सामान के लिए तुरंत सूचित करें।</li>
+                        <li>किसी भी समस्या या शिकायत के लिए संपर्क करें।</li>
+                    </ul>
+                </div>
+
+                <div class="bb-check-card features-card">
+                    <h3><i class="fa-solid fa-star"></i> हमारी विशेषताएं</h3>
+                    <ul>
+                        <li>तेज और सुरक्षित डिलीवरी।</li>
+                        <li>भर्थना बाजार सहित आसपास के क्षेत्र में सेवा।</li>
+                        <li>कई प्रकार की लोकल सेवाएं उपलब्ध।</li>
+                        <li>विश्वसनीय और पारदर्शी प्रक्रिया।</li>
+                        <li>हर सामान की जिम्मेदारी के साथ सेवा।</li>
+                    </ul>
+                </div>
+
+                <div class="bb-slogan">
+                    <strong>आपका सामान</strong>
+                    <span>हमारी जिम्मेदारी</span>
+                    <b>हमारी प्रतिबद्धता</b>
+                </div>
+
+            </div>
+
+            <div class="bb-bottom-contact">
+                <div><i class="fa-solid fa-location-dot"></i><strong>BharthanaBazar.com</strong><small>भर्थना बाजार
+                        (Etawah)</small></div>
+                <div><i class="fa-brands fa-whatsapp"></i><strong>7830726630</strong><small>WhatsApp / संपर्क</small>
+                </div>
+                <div><i class="fa-solid fa-user-tie"></i><strong>Owner</strong><small>Shiksha Yadav</small></div>
+            </div>
+            <div class="bb-black-footer">हर घर की जरूरत — भर्थना बाजार</div>
+
+        </div>
+    </section>
+
 
 
 
@@ -2128,7 +4598,7 @@
                             ke liye local mistri.
                         </p>
 
-                        <a href="tel:+910000000000" class="service-link">
+                        <a href="tel:+918449073224" class="service-link">
 
                             Call Now
                             <i class="fa-solid fa-arrow-right"></i>
@@ -2264,7 +4734,7 @@
                             services.
                         </p>
 
-                        <a href="tel:+910000000000" class="service-link">
+                        <a href="tel:+918449073224" class="service-link">
 
                             Contact Now
                             <i class="fa-solid fa-arrow-right"></i>
@@ -2298,7 +4768,7 @@
                             roadside help.
                         </p>
 
-                        <a href="tel:+910000000000" class="service-link">
+                        <a href="tel:+918449073224" class="service-link">
 
                             Call Now
                             <i class="fa-solid fa-arrow-right"></i>
@@ -2316,6 +4786,464 @@
 
     </section>
 
+
+
+
+    <!-- =========================================================
+         LOCAL SERVICE DIRECTORY
+    ========================================================= -->
+    <section class="section directory-section " id="service-group-1">
+        <div class="container">
+            <div class="heading reveal">
+                <small>LOCAL SERVICE DIRECTORY</small>
+                <h2>Bharthana Ki <span>Daily & Emergency Services</span></h2>
+                <p>Restaurant se lekar hospital, vehicle service, cleaning aur ghar ke mistri tak — zarurat ke local
+                    businesses ek hi jagah.</p>
+            </div>
+
+            <div class="directory-grid">
+
+                <article class="directory-card reveal delay-1">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80"
+                            alt="Restaurant" loading="lazy" data-fallback-icon="fa-utensils">
+                        <span class="directory-number">01</span>
+                        <span class="directory-icon"><i class="fa-solid fa-utensils"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Restaurant</h3>
+                        <p>Restaurant & family dining</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-2">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb9685?auto=format&fit=crop&w=900&q=80"
+                            alt="Marriage Hall" loading="lazy" data-fallback-icon="fa-champagne-glasses">
+                        <span class="directory-number">02</span>
+                        <span class="directory-icon"><i class="fa-solid fa-champagne-glasses"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Marriage Hall</h3>
+                        <p>Shaadi aur function hall</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-3">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=900&q=80"
+                            alt="Event Services" loading="lazy" data-fallback-icon="fa-calendar-days">
+                        <span class="directory-number">03</span>
+                        <span class="directory-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Event Services</h3>
+                        <p>Event planning & decoration</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-4">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=900&q=80"
+                            alt="Medical Store" loading="lazy" data-fallback-icon="fa-prescription-bottle-medical">
+                        <span class="directory-number">04</span>
+                        <span class="directory-icon"><i class="fa-solid fa-prescription-bottle-medical"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Medical Store</h3>
+                        <p>Medicine & healthcare needs</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-1">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=900&q=80"
+                            alt="Hospital" loading="lazy" data-fallback-icon="fa-hospital">
+                        <span class="directory-number">05</span>
+                        <span class="directory-icon"><i class="fa-solid fa-hospital"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Hospital</h3>
+                        <p>Nearby hospitals & care</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-2">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80"
+                            alt="Bike Service" loading="lazy" data-fallback-icon="fa-motorcycle">
+                        <span class="directory-number">06</span>
+                        <span class="directory-icon"><i class="fa-solid fa-motorcycle"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Bike Service</h3>
+                        <p>Bike repair & servicing</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-3">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=900&q=80"
+                            alt="Car Service" loading="lazy" data-fallback-icon="fa-car">
+                        <span class="directory-number">07</span>
+                        <span class="directory-icon"><i class="fa-solid fa-car"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Car Service</h3>
+                        <p>Car repair & servicing</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-4">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80"
+                            alt="Taxi Service" loading="lazy" data-fallback-icon="fa-taxi">
+                        <span class="directory-number">08</span>
+                        <span class="directory-icon"><i class="fa-solid fa-taxi"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Taxi Service</h3>
+                        <p>Local taxi & cab service</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-1">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80"
+                            alt="Cleaning Service" loading="lazy" data-fallback-icon="fa-broom">
+                        <span class="directory-number">09</span>
+                        <span class="directory-icon"><i class="fa-solid fa-broom"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Cleaning Service</h3>
+                        <p>Home & office cleaning</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-2">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?auto=format&fit=crop&w=900&q=80"
+                            alt="Dry Cleaners" loading="lazy" data-fallback-icon="fa-shirt">
+                        <span class="directory-number">10</span>
+                        <span class="directory-icon"><i class="fa-solid fa-shirt"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Dry Cleaners</h3>
+                        <p>Clothes cleaning & care</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-3">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1585659722983-3a675dabf23d?auto=format&fit=crop&w=900&q=80"
+                            alt="Dairy & Fridge Repair" loading="lazy" data-fallback-icon="fa-snowflake">
+                        <span class="directory-number">11</span>
+                        <span class="directory-icon"><i class="fa-solid fa-snowflake"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Dairy & Fridge Repair</h3>
+                        <p>Dairy, fridge & cooling repair</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-4">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80"
+                            alt="Makan Mistri" loading="lazy" data-fallback-icon="fa-trowel-bricks">
+                        <span class="directory-number">12</span>
+                        <span class="directory-icon"><i class="fa-solid fa-trowel-bricks"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Makan Mistri</h3>
+                        <p>Mason & home construction work</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         EDUCATION • FITNESS • LOCAL BUSINESS
+    ========================================================= -->
+    <section class="section directory-section alt" id="service-group-2">
+        <div class="container">
+            <div class="heading reveal">
+                <small>EDUCATION • FITNESS • LOCAL BUSINESS</small>
+                <h2>Padhai, Fitness & <span>Local Business</span></h2>
+                <p>Schools, coaching, gym, shaadi services, Jan Seva Kendra, fresh sabzi-fruits, tailoring aur
+                    property/building material providers.</p>
+            </div>
+
+            <div class="directory-grid">
+
+                <article class="directory-card reveal delay-1">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=900&q=80"
+                            alt="Schools" loading="lazy" data-fallback-icon="fa-school">
+                        <span class="directory-number">01</span>
+                        <span class="directory-icon"><i class="fa-solid fa-school"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Schools</h3>
+                        <p>Local schools & education</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-2">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=80"
+                            alt="Coaching Centres" loading="lazy" data-fallback-icon="fa-chalkboard-user">
+                        <span class="directory-number">02</span>
+                        <span class="directory-icon"><i class="fa-solid fa-chalkboard-user"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Coaching Centres</h3>
+                        <p>Competitive & academic coaching</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-3">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80"
+                            alt="Gym" loading="lazy" data-fallback-icon="fa-dumbbell">
+                        <span class="directory-number">03</span>
+                        <span class="directory-icon"><i class="fa-solid fa-dumbbell"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Gym</h3>
+                        <p>Fitness & workout centres</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-4">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80"
+                            alt="Band Baaja Baraat" loading="lazy" data-fallback-icon="fa-music">
+                        <span class="directory-number">04</span>
+                        <span class="directory-icon"><i class="fa-solid fa-music"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Band Baaja Baraat</h3>
+                        <p>Band, DJ & wedding music</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-1">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80"
+                            alt="Jan Seva Kendra" loading="lazy" data-fallback-icon="fa-landmark">
+                        <span class="directory-number">05</span>
+                        <span class="directory-icon"><i class="fa-solid fa-landmark"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Jan Seva Kendra</h3>
+                        <p>Online forms & public services</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-2">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80"
+                            alt="Vegetables & Fruits Seller" loading="lazy" data-fallback-icon="fa-apple-whole">
+                        <span class="directory-number">06</span>
+                        <span class="directory-icon"><i class="fa-solid fa-apple-whole"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Vegetables & Fruits Seller</h3>
+                        <p>Fresh sabzi & fruits</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-3">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=900&q=80"
+                            alt="Tailors - Male & Female" loading="lazy" data-fallback-icon="fa-scissors">
+                        <span class="directory-number">07</span>
+                        <span class="directory-icon"><i class="fa-solid fa-scissors"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Tailors - Male & Female</h3>
+                        <p>Ladies & gents tailoring</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-4">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80"
+                            alt="Property Dealers & Building Materials" loading="lazy" data-fallback-icon="fa-building">
+                        <span class="directory-number">08</span>
+                        <span class="directory-icon"><i class="fa-solid fa-building"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Property Dealers & Building Materials</h3>
+                        <p>Property, plots & construction materials</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         SPECIAL LOCAL CATEGORIES
+    ========================================================= -->
+    <section class="section directory-section green-tint" id="service-group-3">
+        <div class="container">
+            <div class="heading reveal">
+                <small>SPECIAL LOCAL CATEGORIES</small>
+                <h2>Bharthana Ke <span>Aur Bhi Services</span></h2>
+                <p>आड़तिया, धार्मिक स्थल, printing press, painter aur caterers jaise important local categories bhi ab
+                    ek hi directory mein.</p>
+            </div>
+
+            <div class="directory-grid">
+
+                <article class="directory-card reveal delay-1">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80"
+                            alt="आड़तिया" loading="lazy" data-fallback-icon="fa-scale-balanced">
+                        <span class="directory-number">01</span>
+                        <span class="directory-icon"><i class="fa-solid fa-scale-balanced"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>आड़तिया</h3>
+                        <p>Anaj mandi & wholesale dealers</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-2">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80"
+                            alt="धार्मिक स्थल" loading="lazy" data-fallback-icon="fa-place-of-worship">
+                        <span class="directory-number">02</span>
+                        <span class="directory-icon"><i class="fa-solid fa-place-of-worship"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>धार्मिक स्थल</h3>
+                        <p>Mandir, masjid & local religious places</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-3">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?auto=format&fit=crop&w=900&q=80"
+                            alt="Printing Press" loading="lazy" data-fallback-icon="fa-print">
+                        <span class="directory-number">03</span>
+                        <span class="directory-icon"><i class="fa-solid fa-print"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Printing Press</h3>
+                        <p>Printing, visiting cards & banners</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-4">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1562259949-0c8c6d8f1f07?auto=format&fit=crop&w=900&q=80"
+                            alt="Painter" loading="lazy" data-fallback-icon="fa-paint-roller">
+                        <span class="directory-number">04</span>
+                        <span class="directory-icon"><i class="fa-solid fa-paint-roller"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Painter</h3>
+                        <p>House & commercial painting</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="directory-card reveal delay-1">
+                    <div class="directory-image">
+                        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=900&q=80"
+                            alt="Caterers" loading="lazy" data-fallback-icon="fa-bowl-food">
+                        <span class="directory-number">05</span>
+                        <span class="directory-icon"><i class="fa-solid fa-bowl-food"></i></span>
+                    </div>
+                    <div class="directory-body">
+                        <h3>Caterers</h3>
+                        <p>Shaadi, party & event catering</p>
+                        <a href="#contact" class="directory-link">
+                            Details / Contact <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
 
 
     <!-- =========================================================
@@ -2605,7 +5533,7 @@
 
                         <div class="shop-buttons">
 
-                            <a href="tel:+910000000000" class="shop-call">
+                            <a href="tel:+918449073224" class="shop-call">
 
                                 <i class="fa-solid fa-phone"></i>
                                 Call
@@ -2651,7 +5579,7 @@
 
                         <div class="shop-buttons">
 
-                            <a href="tel:+910000000000" class="shop-call">
+                            <a href="tel:+918449073224" class="shop-call">
 
                                 <i class="fa-solid fa-phone"></i>
                                 Call
@@ -2697,7 +5625,7 @@
 
                         <div class="shop-buttons">
 
-                            <a href="tel:+910000000000" class="shop-call">
+                            <a href="tel:+918449073224" class="shop-call">
 
                                 <i class="fa-solid fa-phone"></i>
                                 Call
@@ -2782,7 +5710,7 @@
                             </h4>
 
                             <p>
-                                +91 00000 00000
+                                +91 8449073224
                             </p>
 
                         </div>
@@ -2836,7 +5764,7 @@
                     </div>
 
 
-                    <a href="https://wa.me/910000000000" class="btn btn-green">
+                    <a href="https://wa.me/8449073224" class="btn btn-green">
 
                         <i class="fa-brands fa-whatsapp"></i>
 
@@ -2882,8 +5810,7 @@
 
                         <a href="#home" class="footer-logo">
 
-                            <img src="https://dummyimage.com/600x180/ffffff/073b8f.png&text=Bharthana+Bajar"
-                                alt="Bharthana Bajar">
+                            <img src="logoimg.png" alt="Bharthana Bajar">
 
                         </a>
 
@@ -3070,14 +5997,14 @@
     <div class="floating">
 
 
-        <a href="https://wa.me/910000000000" class="float float-whatsapp" title="WhatsApp">
+        <a href="https://wa.me/+918449073224" class="float float-whatsapp" title="WhatsApp">
 
             <i class="fa-brands fa-whatsapp"></i>
 
         </a>
 
 
-        <a href="tel:+910000000000" class="float float-call" title="Call">
+        <a href="tel:+918449073224" class="float float-call" title="Call">
 
             <i class="fa-solid fa-phone"></i>
 
@@ -3086,6 +6013,119 @@
 
     </div>
 
+
+
+    <script>
+        /* =========================================================
+           MOBILE MENU + SCROLL ANIMATIONS + IMAGE FALLBACK
+        ========================================================= */
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const menuBtn = document.querySelector(".mobile-menu-btn");
+            const nav = document.querySelector(".nav");
+            const header = document.querySelector(".header");
+
+            function setMenu(open) {
+                if (!menuBtn || !nav) return;
+                nav.classList.toggle("mobile-open", open);
+                document.body.classList.toggle("menu-open", open);
+                menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+                menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+                const icon = menuBtn.querySelector("i");
+                if (icon) {
+                    icon.classList.toggle("fa-bars", !open);
+                    icon.classList.toggle("fa-xmark", open);
+                }
+            }
+
+            if (menuBtn && nav) {
+                menuBtn.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    setMenu(!nav.classList.contains("mobile-open"));
+                });
+
+                nav.querySelectorAll("a").forEach(link => {
+                    link.addEventListener("click", function () {
+                        setMenu(false);
+                    });
+                });
+
+                document.addEventListener("click", function (e) {
+                    if (window.innerWidth <= 1050 && nav.classList.contains("mobile-open") &&
+                        !nav.contains(e.target) && !menuBtn.contains(e.target)) {
+                        setMenu(false);
+                    }
+                });
+
+                document.addEventListener("keydown", function (e) {
+                    if (e.key === "Escape") setMenu(false);
+                });
+
+                window.addEventListener("resize", function () {
+                    if (window.innerWidth > 1050) setMenu(false);
+                });
+            }
+
+            /* Reveal animation for the whole site. */
+            const revealItems = document.querySelectorAll(
+                ".reveal, .section, .quick-item, .category-card, .service-card, .shop-card, .directory-card, .poster-card, .delivery-box, .contact-info, .map, .stat, .footer-col"
+            );
+
+            if ("IntersectionObserver" in window) {
+                const observer = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("show");
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.08, rootMargin: "0px 0px -30px 0px" });
+
+                revealItems.forEach((item, index) => {
+                    item.classList.add("reveal");
+                    if (!item.classList.contains("delay-1") && !item.classList.contains("delay-2") &&
+                        !item.classList.contains("delay-3") && !item.classList.contains("delay-4")) {
+                        item.classList.add("delay-" + ((index % 4) + 1));
+                    }
+                    observer.observe(item);
+                });
+            } else {
+                revealItems.forEach(item => item.classList.add("show"));
+            }
+
+            /* Never leave a broken image on screen. */
+            document.querySelectorAll("img").forEach(img => {
+                img.addEventListener("error", function () {
+                    if (this.dataset.fallbackDone) return;
+                    this.dataset.fallbackDone = "1";
+                    const title = (this.alt || "Bharthana Bajar").replace(/[<>&\"']/g, "");
+                    const icon = this.dataset.fallbackIcon || "fa-store";
+                    const svg = `
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+                            <defs>
+                                <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#073b8f"/>
+                                    <stop offset="100%" stop-color="#159447"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="900" height="600" fill="url(#g)"/>
+                            <circle cx="450" cy="250" r="105" fill="#fff" opacity=".18"/>
+                            <text x="450" y="292" text-anchor="middle" font-family="Arial" font-size="105" fill="#fff">★</text>
+                            <text x="450" y="475" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#fff">${title}</text>
+                        </svg>`;
+                    this.src = "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg);
+                }, { once: true });
+            });
+
+            /* Button press feedback. */
+            document.querySelectorAll("a, button").forEach(el => {
+                el.addEventListener("mousedown", () => el.classList.add("pressed"));
+                el.addEventListener("mouseup", () => el.classList.remove("pressed"));
+                el.addEventListener("mouseleave", () => el.classList.remove("pressed"));
+            });
+        });
+    </script>
 
 </body>
 
