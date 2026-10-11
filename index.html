@@ -3467,7 +3467,7 @@
                     <br>
 
                     <span class="green-text">
-                        Bajar
+                        Bazar
                     </span>
 
                 </h1>
@@ -3620,6 +3620,340 @@
     </section>
 
 
+<!-- slider section  -->
+
+
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider - Bharthana Bajar</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
+
+    /* Slider container */
+    .bb-slider {
+      position: relative;
+      width: 100%;
+      max-width: 1400px;
+      margin: 20px auto;
+      overflow: hidden;
+      background: #f5f5f5;
+      border-radius: 12px;
+    }
+
+    /* Slides track */
+    .bb-slider-track {
+      display: flex;
+      width: 100%;
+      transition: transform 0.6s ease-in-out;
+    }
+
+    /* Individual slide */
+    .bb-slide {
+      flex: 0 0 100%;
+      width: 100%;
+      min-width: 100%;
+    }
+
+    /* Images: show complete image */
+    .bb-slide img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 600px;
+      object-fit: contain;
+      object-position: center;
+      margin: 0 auto;
+    }
+
+    /* Navigation arrows */
+    .bb-slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 46px;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.65);
+      color: #fff;
+      font-size: 30px;
+      line-height: 1;
+      cursor: pointer;
+      z-index: 5;
+      transition: background 0.3s ease;
+    }
+
+    .bb-slider-btn:hover {
+      background: #e63946;
+    }
+
+    .bb-prev {
+      left: 15px;
+    }
+
+    .bb-next {
+      right: 15px;
+    }
+
+    /* Dots */
+    .bb-slider-dots {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      z-index: 5;
+    }
+
+    .bb-dot {
+      width: 12px;
+      height: 12px;
+      padding: 0;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+    }
+
+    .bb-dot.active {
+      background: #e63946;
+      border-color: #e63946;
+      transform: scale(1.15);
+    }
+
+    /* Tablet */
+    @media (max-width: 768px) {
+      .bb-slider {
+        margin: 12px auto;
+        border-radius: 8px;
+      }
+
+      .bb-slide img {
+        max-height: 400px;
+      }
+
+      .bb-slider-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
+      }
+
+      .bb-prev {
+        left: 8px;
+      }
+
+      .bb-next {
+        right: 8px;
+      }
+
+      .bb-slider-dots {
+        bottom: 10px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 480px) {
+      .bb-slider {
+        margin: 10px auto;
+        border-radius: 5px;
+      }
+
+      .bb-slide img {
+        max-height: 300px;
+      }
+
+      .bb-slider-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 21px;
+      }
+
+      .bb-dot {
+        width: 9px;
+        height: 9px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .bb-slider-track {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- IMAGE SLIDER START -->
+  <section class="bb-slider" id="bbImageSlider">
+
+    <div class="bb-slider-track" id="bbSliderTrack">
+
+      <!-- Image 1 -->
+      <div class="bb-slide">
+        <img
+          src="img1.png"
+          alt="Bharthana Bajar banner 1"
+          loading="eager"
+        >
+      </div>
+
+      <!-- Image 2 -->
+      <div class="bb-slide">
+        <img
+          src="img2.png"
+          alt="Bharthana Bajar banner 2"
+          loading="lazy"
+        >
+      </div>
+
+    </div>
+
+    <!-- Previous button -->
+    <button
+      type="button"
+      class="bb-slider-btn bb-prev"
+      id="bbSliderPrev"
+      aria-label="Previous image"
+    >&#8249;</button>
+
+    <!-- Next button -->
+    <button
+      type="button"
+      class="bb-slider-btn bb-next"
+      id="bbSliderNext"
+      aria-label="Next image"
+    >&#8250;</button>
+
+    <!-- Navigation dots -->
+    <div class="bb-slider-dots" id="bbSliderDots">
+      <button
+        type="button"
+        class="bb-dot active"
+        aria-label="Show image 1"
+      ></button>
+
+      <button
+        type="button"
+        class="bb-dot"
+        aria-label="Show image 2"
+      ></button>
+    </div>
+
+  </section>
+  <!-- IMAGE SLIDER END -->
+
+  <script>
+    (function () {
+      const slider = document.getElementById("bbImageSlider");
+
+      if (!slider || slider.dataset.initialized === "true") {
+        return;
+      }
+
+      slider.dataset.initialized = "true";
+
+      const track = document.getElementById("bbSliderTrack");
+      const slides = slider.querySelectorAll(".bb-slide");
+      const dots = slider.querySelectorAll(".bb-dot");
+      const prevBtn = document.getElementById("bbSliderPrev");
+      const nextBtn = document.getElementById("bbSliderNext");
+
+      let currentSlide = 0;
+      let autoSlideTimer = null;
+
+      function showSlide(index) {
+        currentSlide = (index + slides.length) % slides.length;
+
+        track.style.transform =
+          "translateX(-" + (currentSlide * 100) + "%)";
+
+        dots.forEach(function (dot, i) {
+          dot.classList.toggle("active", i === currentSlide);
+        });
+      }
+
+      function stopAutoSlide() {
+        if (autoSlideTimer) {
+          clearInterval(autoSlideTimer);
+          autoSlideTimer = null;
+        }
+      }
+
+      function startAutoSlide() {
+        stopAutoSlide();
+
+        autoSlideTimer = setInterval(function () {
+          showSlide(currentSlide + 1);
+        }, 4000);
+      }
+
+      prevBtn.addEventListener("click", function () {
+        showSlide(currentSlide - 1);
+        startAutoSlide();
+      });
+
+      nextBtn.addEventListener("click", function () {
+        showSlide(currentSlide + 1);
+        startAutoSlide();
+      });
+
+      dots.forEach(function (dot, index) {
+        dot.addEventListener("click", function () {
+          showSlide(index);
+          startAutoSlide();
+        });
+      });
+
+      slider.addEventListener("mouseenter", stopAutoSlide);
+      slider.addEventListener("mouseleave", startAutoSlide);
+
+      /* Swipe support for mobile */
+      let touchStartX = 0;
+
+      slider.addEventListener("touchstart", function (event) {
+        touchStartX = event.changedTouches[0].screenX;
+      }, { passive: true });
+
+      slider.addEventListener("touchend", function (event) {
+        const touchEndX = event.changedTouches[0].screenX;
+        const difference = touchStartX - touchEndX;
+
+        if (Math.abs(difference) > 50) {
+          showSlide(
+            difference > 0 ? currentSlide + 1 : currentSlide - 1
+          );
+          startAutoSlide();
+        }
+      }, { passive: true });
+
+      showSlide(0);
+      startAutoSlide();
+    })();
+  </script>
+
+</body>
+</html>
 
     <!-- =========================================================
          CUSTOMER INFORMATION / DELIVERY POSTERS
